@@ -20,13 +20,13 @@ body {
     height: 120px;
 }
 
-.header img[src^="../img/icone"] {
+.header img[src^="img/icone"] {
     width: 25px;
     height:25px;
     transition: transform 1s;
 }
 
-.header img[src^="../img/icone"]:hover {
+.header img[src^="img/icone"]:hover {
     transform: scale(1.3)
 }
 
