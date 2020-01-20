@@ -26,6 +26,6 @@ Inspirado em alguns sites de agências de turismo existentes como CVC, Rogetur e
 
 ---
 
-Colaboradores deste projeto: Lucas Henrique Santos Chagas e Pedro Gabriel
+Colaboradores deste projeto: Lucas Henrique Santos Chagas e Pedro Gabriel de Lima Diniz
 
-E-mail para contato: lucas.chagas@academico.ifpb.edu.br / 
+E-mails para contato: lucas.chagas@academico.ifpb.edu.br / pedrogabriel12423@gmail.com
