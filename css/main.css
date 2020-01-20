@@ -206,13 +206,13 @@ body {
 
 /*Backgrounds dos cards*/
 .conheçam section .conde{
-    background-image: url(img/089115429-MOB.jpg);
+    background-image: url(../img/089115429-MOB.jpg);
 }
 .conheçam section .pipa{
-    background-image: url(img/praia-de-pipa-1073x715.jpg);
+    background-image: url(../img/praia-de-pipa-1073x715.jpg);
 }
 .conheçam section .jampa{
-    background-image: url(img/busto-de-tamandare-e.jpg);
+    background-image: url(../img/busto-de-tamandare-e.jpg);
 }
 .conheçam section .destino{
     background-repeat: no-repeat;
