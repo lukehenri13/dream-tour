@@ -127,7 +127,7 @@ body {
     flex-flow: wrap column;
     min-height: 400px;
     min-width: 1200px;
-    background-image: url(img/vid-index.gif);
+    background-image: url(../img/vid-index.gif);
     background-repeat: no-repeat;
     background-position: 0 -100px;
     background-size: cover;
