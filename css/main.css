@@ -1,0 +1,764 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* CABEÇALHO DA PÁGINA */
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1%;
+}
+
+.header #logo {
+    width: 160px;
+    height: 120px;
+}
+
+.header img[src^="../img/icone"] {
+    width: 25px;
+    height:25px;
+    transition: transform 1s;
+}
+
+.header img[src^="../img/icone"]:hover {
+    transform: scale(1.3)
+}
+
+.header .c1, .c2, .c3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header .c2, .c3 {
+    align-items: center;
+}
+
+.header ul.paises {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.header .c2 input {
+    padding: 10px;
+    padding-right: 150px;
+}
+
+.header .c3 .fa-shopping-cart {
+    margin-left: 1.5rem;
+    color: tomato;
+    font-size: 1.2rem;
+}
+
+.header .c3 p {
+    font-size: 1rem;
+}
+
+/* MENU */
+
+.menu {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center; 
+  }
+  .menu ul {
+      list-style: none;
+      position: relative; 
+  }
+  .menu ul li {
+      width: 200px;
+      float: left;
+  }
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff628;
+    color: #000;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color:#000;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.menu ul ul li a {
+    background-color: #ffff7a;
+}
+
+/*===============CONTEÚDO DO INDEX===============*/
+
+/* ANIMAÇÃO */
+
+.anima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap column;
+    min-height: 400px;
+    min-width: 1200px;
+    background-image: url(../img/vid-index.gif);
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    background-size: cover;
+}
+.anima h1 {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    color: #edff00;
+    font-size: 6rem;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: #808080; /* cor da borda */
+}
+
+.anima p {
+    text-align: center;
+    font-family: 'Pattaya', sans-serif;
+    color: #ffffff;
+    font-size: 2.5em;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: #000000; /* cor da borda */
+}
+
+.anima #a1 {
+    animation: ani1 3s linear;
+}
+
+@keyframes ani1 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.anima #a2 {
+    animation: ani2 3s linear;
+}
+
+@keyframes ani2 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.anima #a3 {
+    animation: ani3 3s linear;
+}
+
+@keyframes ani3 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* TÍTULO E CARDS */
+
+.title {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+/*Backgrounds dos cards*/
+.conheçam section .conde{
+    background: url(../img/089115429-MOB.jpg);
+}
+.conheçam section .pipa{
+    background-image: url(../img/praia-de-pipa-1073x715.jpg);
+}
+.conheçam section .jampa{
+    background-image: url(../img/busto-de-tamandare-e.jpg);
+}
+.conheçam section .destino{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border: 1px solid grey;
+}
+.conheçam section{
+    margin-left: 15px;
+    transition: transform 0.5s;
+    will-change: scale;
+}
+.conheçam section:hover{
+    transform: scale(1.01);
+}
+/*Conteudo dos cards*/
+.conheçam{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+.conheçam h1{
+    line-height: 5em;
+    /*-webkit-text-stroke-width: .4px;
+    -webkit-text-stroke-color: #073515; */
+}
+.conheçam p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 1000;
+    /*-webkit-text-stroke-width: .4px;
+    -webkit-text-stroke-color: #073515; */
+}
+a{
+    text-decoration: none;
+}
+a .meet{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 11px;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    transition: transform 1s;
+    will-change: scale;
+}
+a .meet:hover{
+    transform: scale(1.1);
+}
+
+/*  RODAPÉ */
+.rod-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1 auto;
+    margin-top: 4rem;
+}
+.p1 {
+    font-size: 1.3rem;
+}
+/* PRIMEIRA SEÇÃO DO RODAPÉ - LINKS ÚTEIS*/
+.rod-container #links {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.rod-container #links .p1 {
+    line-height: .3rem;
+    margin-bottom: 1.2rem;
+}
+
+.rod-container #links a {
+    color: rgb(0,0,0);
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.rod-container #links a:hover {
+    color: rgba(0, 0, 0, .3);
+    transform: scale(1.1);
+}
+
+/*SEGUNDA SEÇÃO DO RODAPÉ - FORMAS DE PAGAMENTO */
+.rod-container #pagar {
+    text-align: center;
+}
+
+.rod-container #pagar .p1 {
+    line-height: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+/*TERCEIRA SEÇÃO DO RODAPÉ - REDES SOCIAIS */
+.rod-container #redes {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.rod-container #redes .p1 {
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+    text-align: center;
+    margin-left: .8rem;
+    margin-bottom: 0%;
+}
+
+.rod-container #redes a {
+    font-size: 2.2rem;
+    color: black;
+}
+.rod-container #redes #icons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.rod-container #redes #icons .fa-facebook {
+    padding: .7rem;
+}
+.rod-container #redes #icons .fa-facebook:hover {
+    color:rgba(0,0,255,.9);
+}
+.rod-container #redes #icons .fa-instagram {
+    padding: .7rem;
+}
+.rod-container #redes #icons .fa-instagram:hover {
+    color:#F77737;
+}
+.rod-container #redes #icons .fa-twitter {
+    padding: .7rem;
+}
+.rod-container #redes #icons .fa-twitter:hover {
+    color: rgba(0, 1, 255, .7)
+}
+
+/* ÚLTIMOS DETALHES DO RODAPÉ */
+
+#fim {
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: .8rem;
+    margin-top: 1.6rem;
+}
+
+#fim p {
+    align-self: center;
+}
+
+#fim img {
+    border: .6px solid rgba(0, 0, 0, .5);
+    border-color: limegreen;
+    border-radius: 20px;
+    width: 150px;
+    height: 70px;
+    justify-content: flex-end;
+}
+
+#created {
+    font-size: .9rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*===============CONTEÚDO DA PÁGINA DE DESTINOS===============*/
+
+/* CARDS DE COMPRA */
+.destinations{
+    display: flex;
+    max-width: 80vw;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.destiny {
+    background-color: #dfdfdf;
+    display: grid;
+    grid-template-columns: 0fr;
+    text-align: center;
+    border: 1px solid black;
+    width: 350;
+    height: 350;
+    margin: 10px;
+    padding: 2px;
+}
+.destiny h3 {
+    font-size: 1.1rem;
+}
+.destiny p{
+    text-align: center;
+    font-size: 1rem;
+}
+.destiny a .compra{
+    color: white;
+    background-color: rgb(245, 73, 73);
+    text-align: center;
+    width: 290px;
+    margin: 0 auto;
+    border-radius: 3px;
+    transition: transform 1s;
+    will-change: scale;
+}
+.destiny a:link{
+    text-decoration: none;
+}
+.destiny .compra:hover{
+    transform: scale(1.04);
+}
+.destiny img{
+    filter: blur(1px);
+    transition: filter 1s;
+    height: 250px;
+    width: 300px;
+}
+.destiny img:hover{
+    filter: blur(0px)
+}
+
+/* FORMULÁRIO DE AJUDA */
+.ajuda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.ajuda #cont1 {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.ajuda h5 {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.ajuda #cont2 {
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3rem;
+    font-size: .9rem;
+}
+
+.ajuda #cont2 .colorcont {
+    color: orange;
+    font-size: 1.5rem;
+}
+
+.ajuda #cont3 {
+    width: 45%;
+}
+
+.ajuda .form1 {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.ajuda .form1 input, textarea {
+    min-height: 20px;
+    min-width: 45px;
+    padding: 15px;
+    padding-right: 100px;
+    margin: 4px;
+}
+
+.ajuda .form1 input[type^="submit"]{
+    padding: .2px;
+    background-color: yellow;
+}
+
+.ajuda .form1 textarea {
+    width:85%;
+}
+/*===============CONTEÚDO DA PÁGINA DE PASSEIO===============*/
+
+/*APRESENTAÇÃO DO PASSEIO*/
+
+.passeio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 3em;
+}
+
+.apresent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.apresent h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.apresent .texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: justify;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.apresent .texto h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.webr {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.webr #fotos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.webr #fotos img {
+    padding: 9px;
+}
+
+.webr #fotos img:nth-child(1){
+    width: 100%;
+}
+
+.webr #mapa {
+    margin-bottom: 1.5rem;
+}
+
+.webr #face {
+    margin-right: 1.5rem;
+}
+/*FORMULÁRIO DE COMPRA*/
+.formcompra{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+}
+.formcompra h1{
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #edfa40;
+    height: 40px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.formcompra h3 {
+    margin-bottom: 2rem;
+}
+.formcompra input, select, textarea{
+    width: 95%;
+    padding: 15px;
+}
+
+.formcompra label{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.formcompra textarea {
+    margin: 0 auto;
+}
+
+.formcompra button {
+    padding: 5px;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background-color: #ffd700;
+    color: whitesmoke;
+    margin-left: 2.2rem;
+}
+
+.formcompra #money {
+    margin-left: .2rem;
+    margin-right: .6rem;
+    font-size: 1.5rem;
+    animation: pisca 10s infinite reverse;
+}
+
+@keyframes pisca {
+    0% {
+        color: black;
+    }
+    10% {
+        color: #FFD700;
+    }
+    20% {
+        color:#696969;
+    }
+    30% {
+        color: #A020F0;
+    }
+    40% {
+        color: #000080;
+    }
+    50% {
+        color: #00FFFF;
+    }
+    60% {
+        color: #DC143C;
+    }
+    70% {
+        color: navajowhite;
+    }
+    80% {
+        color: #7FFF00;
+    }
+    90% {
+        color: #DAA520;
+    }
+    from {
+        color: #FF0000;
+    }
+}
+
+
+
+
+
+
+
+/*============RESPONSIVIDADE================*/
+
+@media screen and (max-width: 400px) {
+    .header {
+        width: 400px;
+    }
+    .menu ul {
+        min-width: 400px;
+    }
+    .anima {
+       max-width: 400px;
+       max-height: 100px;
+       font-size: .3rem;
+    }
+    .anima #a1 {
+        font-size: 2em;
+    }
+    .conheçam {
+        max-width: 400px;
+    }
+}
+@media screen and (max-width:800px) {
+    .menu {
+        margin-bottom: 1.2rem;
+    }
+    .menu ul{
+        min-width: 800px;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: relative;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 2s;
+    }
+
+    .menu ul li:hover ul {
+        max-height:200px;
+    }
+
+    .anima {
+       min-width: 800px;
+       min-height: 200px;
+       font-size: 1rem;
+    }
+
+    .conheçam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conheçam .destino {
+        margin:3%;
+    }
+
+    .rod-container .p1 {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    /*PÁGINA DE PASSEIO */
+    .destinations {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .destiny{
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .destiny{
+        grid-template-rows: 2fr;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .apresent {
+        width:70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }    
+}
+
+@media screen and (max-width: 800px){
+    .passeio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .rod-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
